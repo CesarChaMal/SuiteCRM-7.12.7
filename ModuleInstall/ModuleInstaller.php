@@ -92,6 +92,7 @@ class ModuleInstaller
      */
     public function install($base_dir, $is_upgrade = false, $previous_version = '')
     {
+        $GLOBALS['log']->debug('Debugging \ModuleInstaller::install: ' .$base_dir);
         if (defined('TEMPLATE_URL')) {
             SugarTemplateUtilities::disableCache();
         }
@@ -818,6 +819,7 @@ class ModuleInstaller
     {
         if (isset($this->installdefs['image_dir'])) {
             $this->log(translate('LBL_MI_IN_IMAGES'));
+            $GLOBALS['log']->debug('Debugging \ModuleInstaller::install_images: ' .$this->installdefs['image_dir']);
             $this->copy_path($this->installdefs['image_dir'], 'custom/themes');
         }
     }
@@ -1241,6 +1243,7 @@ class ModuleInstaller
         if (!$uninstall) {
             $from = str_replace('<basepath>', $this->base_dir, $from);
             $GLOBALS['log']->debug('Copy ' . $from);
+            $GLOBALS['log']->debug('Debugging \ModuleInstaller::copy_path: ');
         } else {
             $from = str_replace('<basepath>', $backup_path, $from);
             //$GLOBALS['log']->debug('Restore ' . $from);

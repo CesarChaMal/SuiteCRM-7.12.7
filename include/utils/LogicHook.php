@@ -87,6 +87,7 @@ class LogicHook
         if (empty($GLOBALS['logic_hook'])) {
             $GLOBALS['logic_hook'] = new LogicHook();
         }
+//        print_r($GLOBALS['logic_hook']);
         return $GLOBALS['logic_hook'];
     }
 
