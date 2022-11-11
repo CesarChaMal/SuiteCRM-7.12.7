@@ -137,7 +137,7 @@ $sugar_config = array (
   array (
     'persistent' => true,
     'autofree' => false,
-    'debug' => 0,
+    'debug' => 1,
     'ssl' => false,
     'collation' => 'utf8mb4_general_ci',
     'charset' => 'utf8mb4',
@@ -244,7 +244,7 @@ $sugar_config = array (
   'import_max_execution_time' => 3600,
   'import_max_records_per_file' => 100,
   'import_max_records_total_limit' => '',
-  'installer_locked' => true,
+  'installer_locked' => false,
   'jobs' => 
   array (
     'min_retry_interval' => 30,
@@ -269,7 +269,7 @@ $sugar_config = array (
   'log_memory_usage' => false,
   'logger' => 
   array (
-    'level' => 'fatal',
+    'level' => 'debug',
     'file' => 
     array (
       'ext' => '.log',
