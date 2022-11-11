@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-11 15:47:21
+// created: 2022-11-11 17:43:29
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -46,11 +46,11 @@ $sugar_config = array (
   'aop' => 
   array (
     'distribution_method' => 'roundRobin',
-    'case_closure_email_template_id' => '96a53f04-1d86-77e4-63cd-636e601c99c9',
-    'joomla_account_creation_email_template_id' => 'b9b04790-33ce-42fd-7cdc-636e60ee450e',
-    'case_creation_email_template_id' => 'cc4c814a-9b99-139d-6c51-636e60613639',
-    'contact_email_template_id' => 'e9a8d5e5-768a-e33a-d949-636e60506d25',
-    'user_email_template_id' => 'c39202b1-7cdb-4eda-fed5-636e603fe465',
+    'case_closure_email_template_id' => '4ae52b3d-4aa9-9e79-76a6-636e7b1623c4',
+    'joomla_account_creation_email_template_id' => '5c598072-fe14-2550-6402-636e7bcde9ca',
+    'case_creation_email_template_id' => '68c2b979-c45e-0269-5dd3-636e7bcab254',
+    'contact_email_template_id' => '432118c2-4934-e406-2369-636e7b807995',
+    'user_email_template_id' => '5423bcdd-5ce4-6c69-3648-636e7bc6b148',
   ),
   'aos' => 
   array (
@@ -177,7 +177,7 @@ $sugar_config = array (
   'default_time_format' => 'h:ia',
   'default_user_is_admin' => false,
   'default_user_name' => '',
-  'demoData' => 'no',
+  'demoData' => 'yes',
   'developerMode' => false,
   'disable_convert_lead' => false,
   'disable_export' => false,
@@ -345,7 +345,7 @@ $sugar_config = array (
       'host' => 'localhost',
       'user' => '',
       'pass' => '',
-      'index' => 'a9bf2549186fb30f1d0652f91d66545a',
+      'index' => '3a47677e012f077f95a66c0e903729b8',
       'search_wildcard_char' => '%',
       'search_wildcard_infront' => true,
     ),
@@ -400,7 +400,7 @@ $sugar_config = array (
   'tmp_dir' => 'cache/xml/',
   'tracker_max_display_length' => 15,
   'translation_string_prefix' => false,
-  'unique_key' => 'a9bf2549186fb30f1d0652f91d66545a',
+  'unique_key' => '3a47677e012f077f95a66c0e903729b8',
   'upload_badext' => 
   array (
     0 => 'php',

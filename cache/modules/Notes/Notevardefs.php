@@ -599,5 +599,4 @@
     'security_groups' => 'security_groups',
     'assignable' => 'assignable',
   ),
-  'custom_fields' => false,
 );

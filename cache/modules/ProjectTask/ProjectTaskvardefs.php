@@ -587,5 +587,4 @@
   array (
     'security_groups' => 'security_groups',
   ),
-  'custom_fields' => false,
 );
