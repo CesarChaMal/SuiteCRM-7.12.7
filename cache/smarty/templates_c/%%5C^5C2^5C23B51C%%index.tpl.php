@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.33, created on 2022-09-12 16:15:02
+<?php /* Smarty version 2.6.33, created on 2022-11-11 15:55:27
          compiled from modules/ModuleBuilder/tpls/index.tpl */ ?>
 <iframe id="yui-history-iframe" src="index.php?entryPoint=getImage&imageName=sugar-yui-sprites-grey.png" title="index.php?entryPoint=getImage&imageName=sugar-yui-sprites-grey.png"></iframe>
 <input id="yui-history-field" type="hidden"> 

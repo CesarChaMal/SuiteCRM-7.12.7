@@ -922,7 +922,6 @@
     ),
     'jjwg_maps_address_c' => 
     array (
-      'inline_edit' => 1,
       'required' => false,
       'source' => 'custom_fields',
       'name' => 'jjwg_maps_address_c',
@@ -937,6 +936,7 @@
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
       'audited' => false,
+      'inline_edit' => true,
       'reportable' => true,
       'unified_search' => false,
       'merge_filter' => 'disabled',
@@ -947,7 +947,6 @@
     ),
     'jjwg_maps_geocode_status_c' => 
     array (
-      'inline_edit' => 1,
       'required' => false,
       'source' => 'custom_fields',
       'name' => 'jjwg_maps_geocode_status_c',
@@ -962,6 +961,7 @@
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
       'audited' => false,
+      'inline_edit' => true,
       'reportable' => true,
       'unified_search' => false,
       'merge_filter' => 'disabled',
@@ -972,7 +972,6 @@
     ),
     'jjwg_maps_lat_c' => 
     array (
-      'inline_edit' => 1,
       'required' => false,
       'source' => 'custom_fields',
       'name' => 'jjwg_maps_lat_c',
@@ -987,6 +986,7 @@
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
       'audited' => false,
+      'inline_edit' => true,
       'reportable' => true,
       'unified_search' => false,
       'merge_filter' => 'disabled',
@@ -999,7 +999,6 @@
     ),
     'jjwg_maps_lng_c' => 
     array (
-      'inline_edit' => 1,
       'required' => false,
       'source' => 'custom_fields',
       'name' => 'jjwg_maps_lng_c',
@@ -1014,6 +1013,7 @@
       'duplicate_merge' => 'disabled',
       'duplicate_merge_dom_value' => '0',
       'audited' => false,
+      'inline_edit' => true,
       'reportable' => true,
       'unified_search' => false,
       'merge_filter' => 'disabled',

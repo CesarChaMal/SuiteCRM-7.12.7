@@ -1,5 +1,5 @@
 <?php
-// created: 2022-09-08 13:36:18
+// created: 2022-11-11 15:47:21
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -46,11 +46,11 @@ $sugar_config = array (
   'aop' => 
   array (
     'distribution_method' => 'roundRobin',
-    'case_closure_email_template_id' => '667dfa8a-d8de-722e-3516-6319d3c4871c',
-    'joomla_account_creation_email_template_id' => '7ba55061-138b-a6ae-ac05-6319d37f0694',
-    'case_creation_email_template_id' => '88c040dd-02ff-5ae4-eee2-6319d336de3e',
-    'contact_email_template_id' => '4a396ade-9577-aceb-956e-6319d3ad17c8',
-    'user_email_template_id' => '52de38b0-5974-2889-9be1-6319d3aa8ef1',
+    'case_closure_email_template_id' => '96a53f04-1d86-77e4-63cd-636e601c99c9',
+    'joomla_account_creation_email_template_id' => 'b9b04790-33ce-42fd-7cdc-636e60ee450e',
+    'case_creation_email_template_id' => 'cc4c814a-9b99-139d-6c51-636e60613639',
+    'contact_email_template_id' => 'e9a8d5e5-768a-e33a-d949-636e60506d25',
+    'user_email_template_id' => 'c39202b1-7cdb-4eda-fed5-636e603fe465',
   ),
   'aos' => 
   array (
@@ -137,7 +137,7 @@ $sugar_config = array (
   array (
     'persistent' => true,
     'autofree' => false,
-    'debug' => 0,
+    'debug' => 1,
     'ssl' => false,
     'collation' => 'utf8mb4_general_ci',
     'charset' => 'utf8mb4',
@@ -244,7 +244,7 @@ $sugar_config = array (
   'import_max_execution_time' => 3600,
   'import_max_records_per_file' => 100,
   'import_max_records_total_limit' => '',
-  'installer_locked' => true,
+  'installer_locked' => false,
   'jobs' => 
   array (
     'min_retry_interval' => 30,
@@ -269,7 +269,7 @@ $sugar_config = array (
   'log_memory_usage' => false,
   'logger' => 
   array (
-    'level' => 'fatal',
+    'level' => 'debug',
     'file' => 
     array (
       'ext' => '.log',
@@ -345,7 +345,7 @@ $sugar_config = array (
       'host' => 'localhost',
       'user' => '',
       'pass' => '',
-      'index' => '9d773d4c901510dfea0534a6199f138f',
+      'index' => 'a9bf2549186fb30f1d0652f91d66545a',
       'search_wildcard_char' => '%',
       'search_wildcard_infront' => true,
     ),
@@ -400,7 +400,7 @@ $sugar_config = array (
   'tmp_dir' => 'cache/xml/',
   'tracker_max_display_length' => 15,
   'translation_string_prefix' => false,
-  'unique_key' => '9d773d4c901510dfea0534a6199f138f',
+  'unique_key' => 'a9bf2549186fb30f1d0652f91d66545a',
   'upload_badext' => 
   array (
     0 => 'php',

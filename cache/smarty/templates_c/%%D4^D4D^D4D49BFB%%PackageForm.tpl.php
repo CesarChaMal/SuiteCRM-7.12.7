@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.33, created on 2022-09-12 16:43:23
+<?php /* Smarty version 2.6.33, created on 2022-11-11 15:55:23
          compiled from ModuleInstall/PackageManager/tpls/PackageForm.tpl */ ?>
 <?php if ($this->_tpl_vars['ERR_SUHOSIN'] == true): ?>
 <?php echo $this->_tpl_vars['APP_STRINGS']['ERR_SUHOSIN']; ?>
@@ -80,4 +80,4 @@ pre {
 '; ?>
 
 <?php endif; ?>
-<?php endif; ?>
+<?php endif; ?>

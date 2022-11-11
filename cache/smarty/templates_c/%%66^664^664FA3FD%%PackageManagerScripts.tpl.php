@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.33, created on 2022-09-12 16:43:19
+<?php /* Smarty version 2.6.33, created on 2022-11-11 15:55:20
          compiled from ModuleInstall/PackageManager/tpls/PackageManagerScripts.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getscript', 'ModuleInstall/PackageManager/tpls/PackageManagerScripts.tpl', 42, false),)), $this); ?>
@@ -1185,3 +1185,4 @@ PackageManagerGrid.prototype.addData = function(data){
 YAHOO.util.Event.on(window, \'load\', PackageManager.initPMG, PackageManager, true);
 </script>
 '; ?>
+

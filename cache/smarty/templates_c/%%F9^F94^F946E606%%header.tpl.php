@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.33, created on 2022-09-12 14:04:42
+<?php /* Smarty version 2.6.33, created on 2022-11-11 15:53:47
          compiled from themes/SuiteP/tpls/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'themes/SuiteP/tpls/header.tpl', 63, false),)), $this); ?>
@@ -37,4 +37,4 @@ unset($_smarty_tpl_vars);
     <div id="content" class="content">
         <div id="pagecontent" class=".pagecontent" data-module="<?php echo $this->_tpl_vars['MODULE_NAME']; ?>
 ">
-<?php endif; ?>
+<?php endif; ?>
