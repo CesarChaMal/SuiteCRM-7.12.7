@@ -7892,6 +7892,103 @@
     'join_key_lhs' => 'surveyq72c7options_ida',
     'join_key_rhs' => 'surveyq10d4sponses_idb',
   ),
+  'bugs_cases_1' => 
+  array (
+    'name' => 'bugs_cases_1',
+    'true_relationship_type' => 'one-to-many',
+    'from_studio' => true,
+    'relationships' => 
+    array (
+      'bugs_cases_1' => 
+      array (
+        'lhs_module' => 'Bugs',
+        'lhs_table' => 'bugs',
+        'lhs_key' => 'id',
+        'rhs_module' => 'Cases',
+        'rhs_table' => 'cases',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'bugs_cases_1_c',
+        'join_key_lhs' => 'bugs_cases_1bugs_ida',
+        'join_key_rhs' => 'bugs_cases_1cases_idb',
+      ),
+    ),
+    'table' => 'bugs_cases_1_c',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      1 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      2 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bugs_cases_1bugs_ida',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      4 => 
+      array (
+        'name' => 'bugs_cases_1cases_idb',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'bugs_cases_1spk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'bugs_cases_1_ida1',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'bugs_cases_1bugs_ida',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'bugs_cases_1_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'bugs_cases_1cases_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'Bugs',
+    'lhs_table' => 'bugs',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Cases',
+    'rhs_table' => 'cases',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'bugs_cases_1_c',
+    'join_key_lhs' => 'bugs_cases_1bugs_ida',
+    'join_key_rhs' => 'bugs_cases_1cases_idb',
+  ),
   'cases_aos_products_1' => 
   array (
     'name' => 'cases_aos_products_1',

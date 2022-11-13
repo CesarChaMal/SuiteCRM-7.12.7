@@ -415,12 +415,12 @@ class aCase extends Basic
 
         $bean->load_relationships();
 //        $bean->load_relationship('cases');
-//        $bean->load_relationship('bugs_cases_3');
-//        $cases = $bean->cases->getBeans();
-        $cases = $bean->bugs_cases_3->getBeans();
-//        $cases1 = $bean->bugs_cases_3->getBeans();
+//        $bean->load_relationship('bugs_cases_1');
+        $cases = $bean->cases->getBeans();
+//        $cases = $bean->bugs_cases_1->getBeans();
+//        $cases1 = $bean->bugs_cases_1->getBeans();
 //        $cases2 = $bean->get_linked_beans('cases', 'aCase');
-//        $cases3 = $bean->get_linked_beans('bugs_cases_3', 'aCase');
+//        $cases3 = $bean->get_linked_beans('bugs_cases_1', 'aCase');
 //        echo '<pre>$bean->cases->getBeans(): '; print_r($cases); echo '</pre>';
 
         foreach($cases as $case) {

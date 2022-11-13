@@ -495,6 +495,17 @@
       'bean_name' => 'Release',
       'source' => 'non-db',
     ),
+    'bugs_cases_1' => 
+    array (
+      'name' => 'bugs_cases_1',
+      'type' => 'link',
+      'relationship' => 'bugs_cases_1',
+      'source' => 'non-db',
+      'module' => 'Cases',
+      'bean_name' => 'Case',
+      'side' => 'right',
+      'vname' => 'LBL_BUGS_CASES_1_FROM_CASES_TITLE',
+    ),
   ),
   'indices' => 
   array (
@@ -680,4 +691,5 @@
     'assignable' => 'assignable',
     'basic' => 'basic',
   ),
+  'custom_fields' => false,
 );
