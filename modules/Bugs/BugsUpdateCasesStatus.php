@@ -58,7 +58,9 @@ class BugsUpdateCasesStatus
         // after_save
         $GLOBALS['log']->debug('$bean->status: ' . $bean->status);
         if ($this->isBugClosed($bean)) {
-            $this->case->updateCasesStatus($bean);
+            $this->case->updateCasesStatusToAssigned($bean);
+        } else if ($this->isBugNew($bean)){
+            $this->case->updateCasesStatusToPendingInput($bean);
         }
     }
 
@@ -69,5 +71,14 @@ class BugsUpdateCasesStatus
     public function isBugClosed($bean): bool
     {
         return $bean->status == 'Closed';
+    }
+
+    /**
+     * @param $bean
+     * @return bool
+     */
+    public function isBugNew($bean): bool
+    {
+        return $bean->status == 'New';
     }
 }

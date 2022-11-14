@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-11 17:43:29
+// created: 2022-11-14 13:11:56
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -51,6 +51,19 @@ $sugar_config = array (
     'case_creation_email_template_id' => '68c2b979-c45e-0269-5dd3-636e7bcab254',
     'contact_email_template_id' => '432118c2-4934-e406-2369-636e7b807995',
     'user_email_template_id' => '5423bcdd-5ce4-6c69-3648-636e7bc6b148',
+    'enable_aop' => true,
+    'joomla_url' => '',
+    'enable_portal' => false,
+    'distribution_user_id' => '',
+    'distribution_options' => 
+    array (
+      0 => 'role',
+      1 => '',
+      2 => '',
+    ),
+    'support_from_address' => '',
+    'support_from_name' => '',
+    'case_status_changes' => 'null',
   ),
   'aos' => 
   array (
@@ -251,11 +264,14 @@ $sugar_config = array (
     'max_retries' => 5,
     'timeout' => 86400,
   ),
-  'js_custom_version' => '',
+  'js_custom_version' => 1,
   'js_lang_version' => 1,
   'languages' => 
   array (
     'en_us' => 'English (US)',
+    'fr_FR' => 'Français (France) - fr_FR',
+    'es_MX' => 'Español (Mexico) - es_MX',
+    'pl_PL' => 'Polski (Poland) - pl_PL',
   ),
   'large_scale_test' => false,
   'lead_conv_activity_opt' => 'donothing',

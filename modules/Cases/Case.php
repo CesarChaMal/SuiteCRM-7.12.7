@@ -402,7 +402,7 @@ class aCase extends Basic
         return $ret_array;
     }
 
-    public function updateCasesStatus(&$bean)
+    public function updateCasesStatusToAssigned(&$bean)
     {
         $GLOBALS['log']->info(__METHOD__.' START');
         if (empty($bean->id) || empty($bean->object_name) || empty($bean->module_name)) {
@@ -425,10 +425,46 @@ class aCase extends Basic
 
         foreach($cases as $case) {
             echo $case->state.'<br>';
-            $case->state = 'Closed';
+//            $case->state = 'Closed';
+            $case->state = 'Open';
             $case->save();
             echo $case->status.'<br>';
-            $case->status = 'Closed';
+//            $case->status = 'Closed';
+            $case->status = 'Assigned';
+            $case->save();
+            echo '<pre>$case: '; print_r($case); echo '</pre>';
+        }
+    }
+
+    public function updateCasesStatusToPendingInput(&$bean)
+    {
+        $GLOBALS['log']->info(__METHOD__.' START');
+        if (empty($bean->id) || empty($bean->object_name) || empty($bean->module_name)) {
+            return false;
+        }
+        $GLOBALS['log']->info(__METHOD__.' $bean->object_name: '.$bean->object_name);
+
+        $bean_data = get_object_vars($bean);
+        echo '<pre>get_object_vars($bean): '; print_r($bean_data); echo '</pre>';
+
+        $bean->load_relationships();
+//        $bean->load_relationship('cases');
+//        $bean->load_relationship('bugs_cases_1');
+        $cases = $bean->cases->getBeans();
+//        $cases = $bean->bugs_cases_1->getBeans();
+//        $cases1 = $bean->bugs_cases_1->getBeans();
+//        $cases2 = $bean->get_linked_beans('cases', 'aCase');
+//        $cases3 = $bean->get_linked_beans('bugs_cases_1', 'aCase');
+//        echo '<pre>$bean->cases->getBeans(): '; print_r($cases); echo '</pre>';
+
+        foreach($cases as $case) {
+            echo $case->state.'<br>';
+//            $case->state = 'Closed';
+            $case->state = 'Open';
+            $case->save();
+            echo $case->status.'<br>';
+//            $case->status = 'Closed';
+            $case->status = 'Pending Input';
             $case->save();
             echo '<pre>$case: '; print_r($case); echo '</pre>';
         }

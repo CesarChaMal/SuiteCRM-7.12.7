@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-14 08:47:04
+// created: 2022-11-14 10:07:09
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -9,7 +9,7 @@ $mod_strings = array (
   'LBL_CREATED' => 'Created By',
   'LBL_DESCRIPTION' => 'Body',
   'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Title',
+  'LBL_NAME' => 'Questions',
   'LBL_CREATED_USER' => 'Created by User',
   'LBL_MODIFIED_USER' => 'Modified by User',
   'LBL_LIST_NAME' => 'Name',
