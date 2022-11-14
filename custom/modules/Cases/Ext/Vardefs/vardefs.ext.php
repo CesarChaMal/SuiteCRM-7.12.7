@@ -49,6 +49,22 @@ $dictionary["Case"]["fields"]["cases_aos_products_1"] = array (
 );
 
 
+ // created: 2022-11-14 08:19:07
+$dictionary['Case']['fields']['aok_knowledgebase_id_c']['inline_edit']=1;
+
+ 
+
+ // created: 2022-11-14 08:21:07
+$dictionary['Case']['fields']['aok_knowledge_base_categories_id_c']['inline_edit']=1;
+
+ 
+
+ // created: 2022-11-14 08:21:07
+$dictionary['Case']['fields']['categories_c']['inline_edit']='1';
+$dictionary['Case']['fields']['categories_c']['labelValue']='Categories';
+
+ 
+
  // created: 2022-11-11 17:43:19
 $dictionary['Case']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
@@ -66,6 +82,23 @@ $dictionary['Case']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
 
  // created: 2022-11-11 17:43:17
 $dictionary['Case']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
+
+ 
+
+ // created: 2022-11-14 08:19:07
+$dictionary['Case']['fields']['questions_c']['inline_edit']='1';
+$dictionary['Case']['fields']['questions_c']['labelValue']='Questions';
+
+ 
+
+ // created: 2022-11-14 08:22:54
+$dictionary['Case']['fields']['themes_c']['inline_edit']='1';
+$dictionary['Case']['fields']['themes_c']['labelValue']='Themes';
+
+ 
+
+ // created: 2022-11-14 08:22:54
+$dictionary['Case']['fields']['th_themes_id_c']['inline_edit']=1;
 
  
 ?>

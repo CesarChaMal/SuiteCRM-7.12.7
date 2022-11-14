@@ -8086,6 +8086,102 @@
     'join_key_lhs' => 'cases_aos_products_1cases_ida',
     'join_key_rhs' => 'cases_aos_products_1aos_products_idb',
   ),
+  'th_themes_aok_knowledge_base_categories' => 
+  array (
+    'name' => 'th_themes_aok_knowledge_base_categories',
+    'true_relationship_type' => 'one-to-many',
+    'relationships' => 
+    array (
+      'th_themes_aok_knowledge_base_categories' => 
+      array (
+        'lhs_module' => 'TH_Themes',
+        'lhs_table' => 'th_themes',
+        'lhs_key' => 'id',
+        'rhs_module' => 'AOK_Knowledge_Base_Categories',
+        'rhs_table' => 'aok_knowledge_base_categories',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'th_themes_aok_knowledge_base_categories_c',
+        'join_key_lhs' => 'th_themes_aok_knowledge_base_categoriesth_themes_ida',
+        'join_key_rhs' => 'th_themes_2adeegories_idb',
+      ),
+    ),
+    'table' => 'th_themes_aok_knowledge_base_categories_c',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      1 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      2 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'th_themes_aok_knowledge_base_categoriesth_themes_ida',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      4 => 
+      array (
+        'name' => 'th_themes_2adeegories_idb',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'th_themes_aok_knowledge_base_categoriesspk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'th_themes_aok_knowledge_base_categories_ida1',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'th_themes_aok_knowledge_base_categoriesth_themes_ida',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'th_themes_aok_knowledge_base_categories_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'th_themes_2adeegories_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'TH_Themes',
+    'lhs_table' => 'th_themes',
+    'lhs_key' => 'id',
+    'rhs_module' => 'AOK_Knowledge_Base_Categories',
+    'rhs_table' => 'aok_knowledge_base_categories',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'th_themes_aok_knowledge_base_categories_c',
+    'join_key_lhs' => 'th_themes_aok_knowledge_base_categoriesth_themes_ida',
+    'join_key_rhs' => 'th_themes_2adeegories_idb',
+  ),
   'user_direct_reports' => 
   array (
     'name' => 'user_direct_reports',
@@ -14473,6 +14569,109 @@
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
     'relationship_role_column_value' => 'SurveyQuestionOptions',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
+      ),
+    ),
+  ),
+  'th_themes_modified_user' => 
+  array (
+    'name' => 'th_themes_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TH_Themes',
+    'rhs_table' => 'th_themes',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'th_themes_created_by' => 
+  array (
+    'name' => 'th_themes_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TH_Themes',
+    'rhs_table' => 'th_themes',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'th_themes_assigned_user' => 
+  array (
+    'name' => 'th_themes_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TH_Themes',
+    'rhs_table' => 'th_themes',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_th_themes' => 
+  array (
+    'name' => 'securitygroups_th_themes',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TH_Themes',
+    'rhs_table' => 'th_themes',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'TH_Themes',
     'fields' => 
     array (
       0 => 

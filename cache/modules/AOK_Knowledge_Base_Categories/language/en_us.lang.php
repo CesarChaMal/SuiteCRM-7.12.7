@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-11 19:02:05
+// created: 2022-11-13 13:52:55
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -38,4 +38,5 @@ $mod_strings = array (
   'LBL_AOK_KB_CATEGORIES_SUBPANEL_TITLE' => 'KB Categories',
   'LBL_NEW_FORM_TITLE' => 'New KB Categories',
   'LBL_AOK_KB_TITLE' => 'Knowledge Base',
+  'LBL_TH_THEMES_AOK_KNOWLEDGE_BASE_CATEGORIES_FROM_TH_THEMES_TITLE' => 'Themes',
 );

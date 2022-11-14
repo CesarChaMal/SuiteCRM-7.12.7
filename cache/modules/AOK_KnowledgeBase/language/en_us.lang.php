@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-11 19:02:06
+// created: 2022-11-14 08:47:04
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -43,4 +43,10 @@ $mod_strings = array (
   'LBL_APPROVER_USER_ID' => 'Approver (related User ID)',
   'LBL_APPROVER' => 'Approver',
   'LBL_AOK_KB_CATEGORIES_TITLE' => 'Categories',
+  'LBL_QUESTIONS_AOK_KNOWLEDGEBASE_ID' => 'questions (related  ID)',
+  'LBL_QUESTIONS' => 'Questions',
+  'LBL_CATEGORIES_AOK_KNOWLEDGE_BASE_CATEGORIES_ID' => 'Categories (related  ID)',
+  'LBL_CATEGORIES' => 'Categories',
+  'LBL_THEMES_TH_THEMES_ID' => 'Themes (related  ID)',
+  'LBL_THEMES' => 'Themes',
 );
