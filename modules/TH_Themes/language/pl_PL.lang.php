@@ -37,43 +37,41 @@
  * reasonably feasible for technical reasons, the Appropriate Legal Notices must
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
-
-if (!defined('sugarEntry') || !sugarEntry) {
-    die('Not A Valid Entry Point');
-}
-
-global $current_user;
-
-$dashletData['TH_themesDashlet']['searchFields'] = array(
-    'date_entered' => array('default' => ''),
-    'date_modified' => array('default' => ''),
-    'assigned_user_id' => array(
-        'type' => 'assigned_user_name',
-        'default' => $current_user->name
-    )
-);
-$dashletData['TH_themesDashlet']['columns'] = array(
-    'name' => array(
-        'width' => '40',
-        'label' => 'LBL_LIST_NAME',
-        'link' => true,
-        'default' => true
-    ),
-    'date_entered' => array(
-        'width' => '15',
-        'label' => 'LBL_DATE_ENTERED',
-        'default' => true
-    ),
-    'date_modified' => array(
-        'width' => '15',
-        'label' => 'LBL_DATE_MODIFIED'
-    ),
-    'created_by' => array(
-        'width' => '8',
-        'label' => 'LBL_CREATED'
-    ),
-    'assigned_user_name' => array(
-        'width' => '8',
-        'label' => 'LBL_LIST_ASSIGNED_USER'
-    ),
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'ID przydzielonego użytkownika',
+  'LBL_ASSIGNED_TO_NAME' => 'Przypisano do',
+  'LBL_SECURITYGROUPS' => 'Grupy bezpieczeństwa',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupy bezpieczeństwa',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Data utworzenia',
+  'LBL_DATE_MODIFIED' => 'Data Modyfikacji',
+  'LBL_MODIFIED' => 'Zmodyfikowane przez',
+  'LBL_MODIFIED_NAME' => 'Nazwa użytkownika modyfikującego',
+  'LBL_CREATED' => 'Utworzone przez',
+  'LBL_DESCRIPTION' => 'Opis',
+  'LBL_DELETED' => 'Usunięte',
+  'LBL_NAME' => 'Nazwa',
+  'LBL_CREATED_USER' => 'Utworzony przez Użytkownika',
+  'LBL_MODIFIED_USER' => 'Zmodyfikowany przez Użytkownika',
+  'LBL_LIST_NAME' => 'Nazwa',
+  'LBL_EDIT_BUTTON' => 'Edytuj',
+  'LBL_REMOVE' => 'Usuń',
+  'LBL_ASCENDING' => 'Rosnąco',
+  'LBL_DESCENDING' => 'Malejąco',
+  'LBL_OPT_IN' => 'Zgoda na przetwarzanie danych osobowych',
+  'LBL_OPT_IN_PENDING_EMAIL_NOT_SENT' => 'Oczekuje na potwierdzenie zgody, potwierdzenie nie wysłane',
+  'LBL_OPT_IN_PENDING_EMAIL_SENT' => 'Oczekuje na potwierdzenie zgody, potwierdzenie nie wysłane',
+  'LBL_OPT_IN_CONFIRMED' => 'Zgoda wyrażona',
+  'LBL_LIST_FORM_TITLE' => 'Themes Lista',
+  'LBL_MODULE_NAME' => 'Themes',
+  'LBL_MODULE_TITLE' => 'Themes',
+  'LBL_HOMEPAGE_TITLE' => 'Moja Themes',
+  'LNK_NEW_RECORD' => 'Utwórz Themes',
+  'LNK_LIST' => 'Zobacz Themes',
+  'LNK_IMPORT_TH_THEMES' => 'Import Themes',
+  'LBL_SEARCH_FORM_TITLE' => 'Szukaj Themes',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'Historia',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Działania',
+  'LBL_TH_THEMES_SUBPANEL_TITLE' => 'Themes',
+  'LBL_NEW_FORM_TITLE' => 'Nowy Themes',
 );

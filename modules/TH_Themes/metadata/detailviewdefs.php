@@ -38,7 +38,7 @@
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
-$module_name = 'TH_Themes';
+$module_name = 'TH_themes';
 $viewdefs[$module_name]['DetailView'] = array(
     'templateMeta' => array(
         'form' => array(

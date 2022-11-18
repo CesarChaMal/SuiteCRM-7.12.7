@@ -215,14 +215,25 @@
       'bean_name' => false,
       'vname' => 'LBL_AOK_KB_TITLE',
     ),
+    'aok_knowledge_base_categories_aok_knowledgebase_1' => 
+    array (
+      'name' => 'aok_knowledge_base_categories_aok_knowledgebase_1',
+      'type' => 'link',
+      'relationship' => 'aok_knowledge_base_categories_aok_knowledgebase_1',
+      'source' => 'non-db',
+      'module' => 'AOK_KnowledgeBase',
+      'bean_name' => 'AOK_KnowledgeBase',
+      'side' => 'right',
+      'vname' => 'LBL_AOK_KNOWLEDGE_BASE_CATEGORIES_AOK_KNOWLEDGEBASE_1_FROM_AOK_KNOWLEDGEBASE_TITLE',
+    ),
     'th_themes_aok_knowledge_base_categories' => 
     array (
       'name' => 'th_themes_aok_knowledge_base_categories',
       'type' => 'link',
       'relationship' => 'th_themes_aok_knowledge_base_categories',
       'source' => 'non-db',
-      'module' => 'TH_Themes',
-      'bean_name' => 'TH_Themes',
+      'module' => 'TH_themes',
+      'bean_name' => false,
       'vname' => 'LBL_TH_THEMES_AOK_KNOWLEDGE_BASE_CATEGORIES_FROM_TH_THEMES_TITLE',
       'id_name' => 'th_themes_aok_knowledge_base_categoriesth_themes_ida',
     ),
@@ -236,7 +247,7 @@
       'id_name' => 'th_themes_aok_knowledge_base_categoriesth_themes_ida',
       'link' => 'th_themes_aok_knowledge_base_categories',
       'table' => 'th_themes',
-      'module' => 'TH_Themes',
+      'module' => 'TH_themes',
       'rname' => 'name',
     ),
     'th_themes_aok_knowledge_base_categoriesth_themes_ida' => 

@@ -39,11 +39,11 @@
  */
 
 
-class TH_Themes extends Basic
+class TH_themes extends Basic
 {
     public $new_schema = true;
-    public $module_dir = 'TH_Themes';
-    public $object_name = 'TH_Themes';
+    public $module_dir = 'TH_themes';
+    public $object_name = 'TH_themes';
     public $table_name = 'th_themes';
     public $importable = false;
 

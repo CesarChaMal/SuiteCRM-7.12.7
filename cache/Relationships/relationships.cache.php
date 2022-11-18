@@ -7892,28 +7892,27 @@
     'join_key_lhs' => 'surveyq72c7options_ida',
     'join_key_rhs' => 'surveyq10d4sponses_idb',
   ),
-  'bugs_cases_1' => 
+  'aok_knowledge_base_categories_aok_knowledgebase_1' => 
   array (
-    'name' => 'bugs_cases_1',
+    'name' => 'aok_knowledge_base_categories_aok_knowledgebase_1',
     'true_relationship_type' => 'one-to-many',
-    'from_studio' => true,
     'relationships' => 
     array (
-      'bugs_cases_1' => 
+      'aok_knowledge_base_categories_aok_knowledgebase_1' => 
       array (
-        'lhs_module' => 'Bugs',
-        'lhs_table' => 'bugs',
+        'lhs_module' => 'AOK_Knowledge_Base_Categories',
+        'lhs_table' => 'aok_knowledge_base_categories',
         'lhs_key' => 'id',
-        'rhs_module' => 'Cases',
-        'rhs_table' => 'cases',
+        'rhs_module' => 'AOK_KnowledgeBase',
+        'rhs_table' => 'aok_knowledgebase',
         'rhs_key' => 'id',
         'relationship_type' => 'many-to-many',
-        'join_table' => 'bugs_cases_1_c',
-        'join_key_lhs' => 'bugs_cases_1bugs_ida',
-        'join_key_rhs' => 'bugs_cases_1cases_idb',
+        'join_table' => 'aok_knowledge_base_categories_aok_knowledgebase_1_c',
+        'join_key_lhs' => 'aok_knowle38f5egories_ida',
+        'join_key_rhs' => 'aok_knowle2922dgebase_idb',
       ),
     ),
-    'table' => 'bugs_cases_1_c',
+    'table' => 'aok_knowledge_base_categories_aok_knowledgebase_1_c',
     'fields' => 
     array (
       0 => 
@@ -7937,13 +7936,13 @@
       ),
       3 => 
       array (
-        'name' => 'bugs_cases_1bugs_ida',
+        'name' => 'aok_knowle38f5egories_ida',
         'type' => 'varchar',
         'len' => 36,
       ),
       4 => 
       array (
-        'name' => 'bugs_cases_1cases_idb',
+        'name' => 'aok_knowle2922dgebase_idb',
         'type' => 'varchar',
         'len' => 36,
       ),
@@ -7952,7 +7951,7 @@
     array (
       0 => 
       array (
-        'name' => 'bugs_cases_1spk',
+        'name' => 'aok_knowledge_base_categories_aok_knowledgebase_1spk',
         'type' => 'primary',
         'fields' => 
         array (
@@ -7961,33 +7960,33 @@
       ),
       1 => 
       array (
-        'name' => 'bugs_cases_1_ida1',
+        'name' => 'aok_knowledge_base_categories_aok_knowledgebase_1_ida1',
         'type' => 'index',
         'fields' => 
         array (
-          0 => 'bugs_cases_1bugs_ida',
+          0 => 'aok_knowle38f5egories_ida',
         ),
       ),
       2 => 
       array (
-        'name' => 'bugs_cases_1_alt',
+        'name' => 'aok_knowledge_base_categories_aok_knowledgebase_1_alt',
         'type' => 'alternate_key',
         'fields' => 
         array (
-          0 => 'bugs_cases_1cases_idb',
+          0 => 'aok_knowle2922dgebase_idb',
         ),
       ),
     ),
-    'lhs_module' => 'Bugs',
-    'lhs_table' => 'bugs',
+    'lhs_module' => 'AOK_Knowledge_Base_Categories',
+    'lhs_table' => 'aok_knowledge_base_categories',
     'lhs_key' => 'id',
-    'rhs_module' => 'Cases',
-    'rhs_table' => 'cases',
+    'rhs_module' => 'AOK_KnowledgeBase',
+    'rhs_table' => 'aok_knowledgebase',
     'rhs_key' => 'id',
     'relationship_type' => 'many-to-many',
-    'join_table' => 'bugs_cases_1_c',
-    'join_key_lhs' => 'bugs_cases_1bugs_ida',
-    'join_key_rhs' => 'bugs_cases_1cases_idb',
+    'join_table' => 'aok_knowledge_base_categories_aok_knowledgebase_1_c',
+    'join_key_lhs' => 'aok_knowle38f5egories_ida',
+    'join_key_rhs' => 'aok_knowle2922dgebase_idb',
   ),
   'cases_aos_products_1' => 
   array (
@@ -8094,7 +8093,7 @@
     array (
       'th_themes_aok_knowledge_base_categories' => 
       array (
-        'lhs_module' => 'TH_Themes',
+        'lhs_module' => 'TH_themes',
         'lhs_table' => 'th_themes',
         'lhs_key' => 'id',
         'rhs_module' => 'AOK_Knowledge_Base_Categories',
@@ -8171,7 +8170,7 @@
         ),
       ),
     ),
-    'lhs_module' => 'TH_Themes',
+    'lhs_module' => 'TH_themes',
     'lhs_table' => 'th_themes',
     'lhs_key' => 'id',
     'rhs_module' => 'AOK_Knowledge_Base_Categories',
@@ -14630,7 +14629,7 @@
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TH_Themes',
+    'rhs_module' => 'TH_themes',
     'rhs_table' => 'th_themes',
     'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
@@ -14641,7 +14640,7 @@
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TH_Themes',
+    'rhs_module' => 'TH_themes',
     'rhs_table' => 'th_themes',
     'rhs_key' => 'created_by',
     'relationship_type' => 'one-to-many',
@@ -14652,7 +14651,7 @@
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TH_Themes',
+    'rhs_module' => 'TH_themes',
     'rhs_table' => 'th_themes',
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
@@ -14663,7 +14662,7 @@
     'lhs_module' => 'SecurityGroups',
     'lhs_table' => 'securitygroups',
     'lhs_key' => 'id',
-    'rhs_module' => 'TH_Themes',
+    'rhs_module' => 'TH_themes',
     'rhs_table' => 'th_themes',
     'rhs_key' => 'id',
     'relationship_type' => 'many-to-many',
@@ -14671,7 +14670,7 @@
     'join_key_lhs' => 'securitygroup_id',
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'TH_Themes',
+    'relationship_role_column_value' => 'TH_themes',
     'fields' => 
     array (
       0 => 

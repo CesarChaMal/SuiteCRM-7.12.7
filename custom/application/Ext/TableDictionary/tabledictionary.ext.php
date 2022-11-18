@@ -3,7 +3,7 @@
 
  
  //WARNING: The contents of this file are auto-generated
-include('custom/metadata/bugs_cases_1MetaData.php');
+include('custom/metadata/aok_knowledge_base_categories_aok_knowledgebase_1MetaData.php');
 
 
  

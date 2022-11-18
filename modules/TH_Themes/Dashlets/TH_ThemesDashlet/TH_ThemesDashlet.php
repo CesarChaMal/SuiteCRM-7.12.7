@@ -43,23 +43,23 @@ if (!defined('sugarEntry') || !sugarEntry) {
 }
 
 require_once('include/Dashlets/DashletGeneric.php');
-require_once('modules/TH_Themes/TH_Themes.php');
+require_once('modules/TH_themes/TH_themes.php');
 
-class TH_ThemesDashlet extends DashletGeneric {
+class TH_themesDashlet extends DashletGeneric {
     function __construct($id, $def = null)
     {
         global $current_user, $app_strings;
-        require('modules/TH_Themes/metadata/dashletviewdefs.php');
+        require('modules/TH_themes/metadata/dashletviewdefs.php');
 
         parent::__construct($id, $def);
 
         if (empty($def['title'])) {
-            $this->title = translate('LBL_HOMEPAGE_TITLE', 'TH_Themes');
+            $this->title = translate('LBL_HOMEPAGE_TITLE', 'TH_themes');
         }
 
-        $this->searchFields = $dashletData['TH_ThemesDashlet']['searchFields'];
-        $this->columns = $dashletData['TH_ThemesDashlet']['columns'];
+        $this->searchFields = $dashletData['TH_themesDashlet']['searchFields'];
+        $this->columns = $dashletData['TH_themesDashlet']['columns'];
 
-        $this->seedBean = new TH_Themes();        
+        $this->seedBean = new TH_themes();        
     }
 }

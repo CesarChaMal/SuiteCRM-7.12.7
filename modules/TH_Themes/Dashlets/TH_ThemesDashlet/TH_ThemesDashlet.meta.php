@@ -44,9 +44,9 @@ if (!defined('sugarEntry') || !sugarEntry) {
 
 global $app_strings;
 
-$dashletMeta['TH_ThemesDashlet'] = array(
-    'module' => 'TH_Themes',
-    'title' => translate('LBL_HOMEPAGE_TITLE', 'TH_Themes'),
-    'description' => 'A customizable view into TH_Themes',
+$dashletMeta['TH_themesDashlet'] = array(
+    'module' => 'TH_themes',
+    'title' => translate('LBL_HOMEPAGE_TITLE', 'TH_themes'),
+    'description' => 'A customizable view into TH_themes',
     'category' => 'Module Views'
 );

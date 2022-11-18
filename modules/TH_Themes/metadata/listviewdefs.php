@@ -42,7 +42,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
     die('Not A Valid Entry Point');
 }
 
-$module_name = 'TH_Themes';
+$module_name = 'TH_themes';
 $listViewDefs[$module_name] = array(
     'NAME' => array(
         'width' => '32',

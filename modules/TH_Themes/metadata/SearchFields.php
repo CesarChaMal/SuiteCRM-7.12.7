@@ -42,7 +42,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
     die('Not A Valid Entry Point');
 }
 
-$module_name = 'TH_Themes';
+$module_name = 'TH_themes';
 $searchFields[$module_name] = array(
     'name' => array('query_type' => 'default'),
     'current_user_only' => array(

@@ -543,29 +543,111 @@ document.location=loc;},createCase:function(itemClicked,metaData){loc='index.php
 document.location=loc;},addToFavorites:function(itemClicked,metaData){success=function(data){}
 var cObj=YAHOO.util.Connect.asyncRequest('GET','index.php?to_pdf=true&module=Home&action=AddToFavorites&target_id='+metaData['id']+'&target_module='+metaData['module'],{success:success,failure:success});}};}();var popup_request_data;var close_popup;function get_popup_request_data(){return YAHOO.lang.JSON.stringify(window.document.popup_request_data);}
 function get_close_popup(){return window.document.close_popup;}
-function open_popup(module_name,width,height,initial_filter,close_popup,hide_clear_button,popup_request_data,popup_mode,create,metadata){if(typeof(popupCount)=="undefined"||popupCount==0)
-popupCount=1;window.document.popup_request_data=popup_request_data;window.document.close_popup=close_popup;width=(width==600)?800:width;height=(height==400)?800:height;URL='index.php?'
-+'module='+module_name
-+'&action=Popup';if(initial_filter!=''){URL+='&query=true'+initial_filter;popupName=initial_filter.replace(/[^a-z_0-9]+/ig,'_');windowName=module_name+'_popup_window'+popupName;}else{windowName=module_name+'_popup_window'+popupCount;}
-popupCount++;if(hide_clear_button){URL+='&hide_clear_button=true';}
-windowFeatures='width='+width
-+',height='+height
-+',resizable=1,scrollbars=1';if(popup_mode==''||popup_mode==undefined){popup_mode='single';}
-URL+='&mode='+popup_mode;if(create==''||create==undefined){create='false';}
-URL+='&create='+create;if(metadata!=''&&metadata!=undefined){URL+='&metadata='+metadata;}
-if(popup_request_data.jsonObject){var request_data=popup_request_data.jsonObject;}else{var request_data=popup_request_data;}
-var field_to_name_array_url='';if(request_data&&request_data.field_to_name_array!=undefined){for(var key in request_data.field_to_name_array){if(key.toLowerCase()!='id'){field_to_name_array_url+='&field_to_name[]='+encodeURIComponent(key.toLowerCase());}}}
-if(field_to_name_array_url){URL+=field_to_name_array_url;}
-win=SUGAR.util.openWindow(URL,windowName,windowFeatures);if(window.focus){win.focus();}
-win.popupCount=popupCount;return win;}
+
+function open_popup(module_name,width,height,initial_filter,close_popup,hide_clear_button,popup_request_data,popup_mode,create,metadata){
+    if(typeof(popupCount)=="undefined"||popupCount==0)
+        popupCount=1;
+    window.document.popup_request_data=popup_request_data;
+    window.document.close_popup=close_popup;
+    width=(width==600)?800:width;
+    height=(height==400)?800:height;
+    URL='index.php?' +'module='+module_name +'&action=Popup';
+    if(initial_filter!=''){
+        URL+='&query=true'+initial_filter;
+        popupName=initial_filter.replace(/[^a-z_0-9]+/ig,'_');
+        windowName=module_name+'_popup_window'+popupName;
+    } else{
+        windowName=module_name+'_popup_window'+popupCount;
+    }
+    popupCount++;
+    if(hide_clear_button){
+        URL+='&hide_clear_button=true';
+    }
+    windowFeatures='width='+width +',height='+height +',resizable=1,scrollbars=1';
+    if(popup_mode==''||popup_mode==undefined){
+        popup_mode='single';
+    }
+    URL+='&mode='+popup_mode;
+    if(create==''||create==undefined){
+        create='false';
+    }
+    URL+='&create='+create;
+    if(metadata!=''&&metadata!=undefined){
+        URL+='&metadata='+metadata;
+    }
+    if(popup_request_data.jsonObject){
+        var request_data=popup_request_data.jsonObject;
+    } else {
+        var request_data=popup_request_data;
+    }
+    var field_to_name_array_url='';
+    if(request_data&&request_data.field_to_name_array!=undefined){
+        for(var key in request_data.field_to_name_array){
+            if(key.toLowerCase()!='id'){
+                field_to_name_array_url+='&field_to_name[]='+encodeURIComponent(key.toLowerCase());
+            }
+        }
+    }
+    if(field_to_name_array_url){
+        URL+=field_to_name_array_url;
+    }
+    win=SUGAR.util.openWindow(URL,windowName,windowFeatures);
+    if(window.focus){
+        win.focus();
+    }
+    win.popupCount=popupCount;
+    console.log(win);
+    return win;
+}
 var from_popup_return=false;function replaceHTMLChars(value){return value.replace(/&amp;/gi,'&').replace(/&lt;/gi,'<').replace(/&gt;/gi,'>').replace(/&#039;/gi,'\'').replace(/&quot;/gi,'"');}
 function set_return_basic(popup_reply_data,filter){var form_name=popup_reply_data.form_name;var name_to_value_array=popup_reply_data.name_to_value_array;for(var the_key in name_to_value_array){if(the_key=='toJSON'){}
 else if(the_key.match(filter)){var displayValue=replaceHTMLChars(name_to_value_array[the_key]);if(window.document.forms[form_name]&&window.document.forms[form_name].elements[the_key]){if(window.document.forms[form_name].elements[the_key].tagName=='SELECT'){var selectField=window.document.forms[form_name].elements[the_key];for(var i=0;i<selectField.options.length;i++){if(selectField.options[i].text==displayValue){selectField.options[i].selected=true;SUGAR.util.callOnChangeListers(selectField);break;}}}else{window.document.forms[form_name].elements[the_key].value=displayValue;SUGAR.util.callOnChangeListers(window.document.forms[form_name].elements[the_key]);}}}}}
-function set_return(popup_reply_data){from_popup_return=true;var form_name=popup_reply_data.form_name;var name_to_value_array=popup_reply_data.name_to_value_array;if(typeof name_to_value_array!='undefined'&&name_to_value_array['account_id']){var label_str='';var label_data_str='';var current_label_data_str='';var popupConfirm=popup_reply_data.popupConfirm;for(var the_key in name_to_value_array){if(the_key=='toJSON'){}
-else{var displayValue=replaceHTMLChars(name_to_value_array[the_key]);if(window.document.forms[form_name]&&document.getElementById(the_key+'_label')&&!the_key.match(/account/)){var data_label=document.getElementById(the_key+'_label').innerHTML.replace(/\n/gi,'').replace(/<\/?[^>]+(>|$)/g,"");label_str+=data_label+' \n';label_data_str+=data_label+' '+displayValue+'\n';if(window.document.forms[form_name].elements[the_key]){current_label_data_str+=data_label+' '+window.document.forms[form_name].elements[the_key].value+'\n';}}}}
-if(label_data_str!=label_str&&current_label_data_str!=label_str){if(typeof popupConfirm!='undefined'){if(popupConfirm>-1){set_return_basic(popup_reply_data,/\S/);}else{set_return_basic(popup_reply_data,/account/);}}
-else if(confirm(SUGAR.language.get('app_strings','NTC_OVERWRITE_ADDRESS_PHONE_CONFIRM')+'\n\n'+label_data_str)){set_return_basic(popup_reply_data,/\S/);}
-else{set_return_basic(popup_reply_data,/account/);}}else if(label_data_str!=label_str&&current_label_data_str==label_str){set_return_basic(popup_reply_data,/\S/);}else if(label_data_str==label_str){set_return_basic(popup_reply_data,/account/);}}else{set_return_basic(popup_reply_data,/\S/);}}
+
+function set_return(popup_reply_data){
+    from_popup_return=true;
+    var form_name=popup_reply_data.form_name;
+    var name_to_value_array=popup_reply_data.name_to_value_array;
+    if(typeof name_to_value_array!='undefined'&&name_to_value_array['account_id']){
+        var label_str='';
+        var label_data_str='';
+        var current_label_data_str='';
+        var popupConfirm=popup_reply_data.popupConfirm;
+        for(var the_key in name_to_value_array){
+            if(the_key=='toJSON'){}
+            else{
+                var displayValue=replaceHTMLChars(name_to_value_array[the_key]);
+                if(window.document.forms[form_name]&&document.getElementById(the_key+'_label')&&!the_key.match(/account/)){
+                    var data_label=document.getElementById(the_key+'_label').innerHTML.replace(/\n/gi,'').replace(/<\/?[^>]+(>|$)/g,"");
+                    label_str+=data_label+' \n';
+                    label_data_str+=data_label+' '+displayValue+'\n';
+                    if(window.document.forms[form_name].elements[the_key]){
+                        current_label_data_str+=data_label+' '+window.document.forms[form_name].elements[the_key].value+'\n';
+                    }
+                }
+            }
+        }
+        if(label_data_str!=label_str&&current_label_data_str!=label_str){
+            if(typeof popupConfirm!='undefined'){
+                if(popupConfirm>-1){
+                    set_return_basic(popup_reply_data,/\S/);
+                }else{
+                    set_return_basic(popup_reply_data,/account/);
+                }
+            } else if(confirm(SUGAR.language.get('app_strings','NTC_OVERWRITE_ADDRESS_PHONE_CONFIRM')+'\n\n'+label_data_str)){
+                set_return_basic(popup_reply_data,/\S/);
+            } else{
+                set_return_basic(popup_reply_data,/account/);
+            }
+        } else if(label_data_str!=label_str&&current_label_data_str==label_str){
+            set_return_basic(popup_reply_data,/\S/);
+        } else if(label_data_str==label_str){
+            set_return_basic(popup_reply_data,/account/);
+        }
+    } else{
+        set_return_basic(popup_reply_data,/\S/);
+    }
+}
+
 function set_return_lead_conv(popup_reply_data){set_return(popup_reply_data);if(document.getElementById('lead_conv_ac_op_sel')&&typeof onBlurKeyUpHandler=='function'){onBlurKeyUpHandler();}}
 function set_return_and_save(popup_reply_data){var form_name=popup_reply_data.form_name;var name_to_value_array=popup_reply_data.name_to_value_array;for(var the_key in name_to_value_array){if(the_key=='toJSON'){}
 else{window.document.forms[form_name].elements[the_key].value=name_to_value_array[the_key];}}

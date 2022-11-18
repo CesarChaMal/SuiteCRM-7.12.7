@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-13 13:52:55
+// created: 2022-11-15 14:18:50
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -9,7 +9,7 @@ $mod_strings = array (
   'LBL_CREATED' => 'Created By',
   'LBL_DESCRIPTION' => 'Description',
   'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Name',
+  'LBL_NAME' => 'Category',
   'LBL_CREATED_USER' => 'Created by User',
   'LBL_MODIFIED_USER' => 'Modified by User',
   'LBL_LIST_NAME' => 'Name',
@@ -38,5 +38,6 @@ $mod_strings = array (
   'LBL_AOK_KB_CATEGORIES_SUBPANEL_TITLE' => 'KB Categories',
   'LBL_NEW_FORM_TITLE' => 'New KB Categories',
   'LBL_AOK_KB_TITLE' => 'Knowledge Base',
+  'LBL_AOK_KNOWLEDGE_BASE_CATEGORIES_AOK_KNOWLEDGEBASE_1_FROM_AOK_KNOWLEDGEBASE_TITLE' => 'Knowledge Base',
   'LBL_TH_THEMES_AOK_KNOWLEDGE_BASE_CATEGORIES_FROM_TH_THEMES_TITLE' => 'Themes',
 );

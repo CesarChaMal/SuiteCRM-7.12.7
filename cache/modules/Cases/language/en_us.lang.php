@@ -1,5 +1,5 @@
 <?php
-// created: 2022-11-14 08:22:56
+// created: 2022-11-15 12:20:40
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -105,11 +105,6 @@ $mod_strings = array (
   'LBL_CASE_UPDATE_FORM' => 'Updates - Attachment form',
   'LBL_UNKNOWN_CONTACT' => 'Unknown Contact',
   'LBL_CASES_AOS_PRODUCTS_1_FROM_AOS_PRODUCTS_TITLE' => 'Products',
-  'LBL_BUGS_CASES_1_FROM_BUGS_TITLE' => 'Bugs',
   'LBL_QUESTIONS_AOK_KNOWLEDGEBASE_ID' => 'Questions (related  ID)',
   'LBL_QUESTIONS' => 'Questions',
-  'LBL_CATEGORIES_AOK_KNOWLEDGE_BASE_CATEGORIES_ID' => 'Categories (related  ID)',
-  'LBL_CATEGORIES' => 'Categories',
-  'LBL_THEMES_TH_THEMES_ID' => 'Themes (related  ID)',
-  'LBL_THEMES' => 'Themes',
 );

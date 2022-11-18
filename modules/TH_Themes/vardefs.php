@@ -38,7 +38,7 @@
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
-$dictionary['TH_Themes'] = array(
+$dictionary['TH_themes'] = array(
     'table' => 'th_themes',
     'audited' => true,
     'inline_edit' => true,
@@ -53,4 +53,4 @@ $dictionary['TH_Themes'] = array(
 if (!class_exists('VardefManager')) {
         require_once('include/SugarObjects/VardefManager.php');
 }
-VardefManager::createVardef('TH_Themes', 'TH_Themes', array('basic','assignable','security_groups'));
+VardefManager::createVardef('TH_themes', 'TH_themes', array('basic','assignable','security_groups'));

@@ -60,6 +60,7 @@ class CasesController extends SugarController
         $offset = 0;
         $limit = 30;
 
+        $GLOBALS['log']->debug('Query: ' . $query);
         $result = DBManagerFactory::getInstance()->limitQuery($query, $offset, $limit);
 
         $echo = '<table>';

@@ -42,8 +42,8 @@ if (!defined('sugarEntry') || !sugarEntry) {
     die('Not A Valid Entry Point');
 }
 
-$module_name = 'TH_Themes';
-$object_name = 'TH_Themes';
+$module_name = 'TH_themes';
+$object_name = 'TH_themes';
 $_module_name = 'th_themes';
 $popupMeta = array(
     'moduleMain' => $module_name,

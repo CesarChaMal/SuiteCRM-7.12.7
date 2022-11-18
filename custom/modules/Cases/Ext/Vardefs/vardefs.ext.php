@@ -2,40 +2,6 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2022-11-11 19:01:23
-$dictionary["Case"]["fields"]["bugs_cases_1"] = array (
-  'name' => 'bugs_cases_1',
-  'type' => 'link',
-  'relationship' => 'bugs_cases_1',
-  'source' => 'non-db',
-  'module' => 'Bugs',
-  'bean_name' => 'Bug',
-  'vname' => 'LBL_BUGS_CASES_1_FROM_BUGS_TITLE',
-  'id_name' => 'bugs_cases_1bugs_ida',
-);
-$dictionary["Case"]["fields"]["bugs_cases_1_name"] = array (
-  'name' => 'bugs_cases_1_name',
-  'type' => 'relate',
-  'source' => 'non-db',
-  'vname' => 'LBL_BUGS_CASES_1_FROM_BUGS_TITLE',
-  'save' => true,
-  'id_name' => 'bugs_cases_1bugs_ida',
-  'link' => 'bugs_cases_1',
-  'table' => 'bugs',
-  'module' => 'Bugs',
-  'rname' => 'name',
-);
-$dictionary["Case"]["fields"]["bugs_cases_1bugs_ida"] = array (
-  'name' => 'bugs_cases_1bugs_ida',
-  'type' => 'link',
-  'relationship' => 'bugs_cases_1',
-  'source' => 'non-db',
-  'reportable' => false,
-  'side' => 'right',
-  'vname' => 'LBL_BUGS_CASES_1_FROM_CASES_TITLE',
-);
-
-
 // created: 2022-09-12 14:00:04
 $dictionary["Case"]["fields"]["cases_aos_products_1"] = array (
   'name' => 'cases_aos_products_1',
@@ -49,19 +15,8 @@ $dictionary["Case"]["fields"]["cases_aos_products_1"] = array (
 );
 
 
- // created: 2022-11-14 08:19:07
+ // created: 2022-11-15 12:20:37
 $dictionary['Case']['fields']['aok_knowledgebase_id_c']['inline_edit']=1;
-
- 
-
- // created: 2022-11-14 08:21:07
-$dictionary['Case']['fields']['aok_knowledge_base_categories_id_c']['inline_edit']=1;
-
- 
-
- // created: 2022-11-14 08:21:07
-$dictionary['Case']['fields']['categories_c']['inline_edit']='1';
-$dictionary['Case']['fields']['categories_c']['labelValue']='Categories';
 
  
 
@@ -85,20 +40,9 @@ $dictionary['Case']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  
 
- // created: 2022-11-14 08:19:07
+ // created: 2022-11-15 12:20:37
 $dictionary['Case']['fields']['questions_c']['inline_edit']='1';
 $dictionary['Case']['fields']['questions_c']['labelValue']='Questions';
-
- 
-
- // created: 2022-11-14 08:22:54
-$dictionary['Case']['fields']['themes_c']['inline_edit']='1';
-$dictionary['Case']['fields']['themes_c']['labelValue']='Themes';
-
- 
-
- // created: 2022-11-14 08:22:54
-$dictionary['Case']['fields']['th_themes_id_c']['inline_edit']=1;
 
  
 ?>

@@ -37,43 +37,41 @@
  * reasonably feasible for technical reasons, the Appropriate Legal Notices must
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
-
-if (!defined('sugarEntry') || !sugarEntry) {
-    die('Not A Valid Entry Point');
-}
-
-global $current_user;
-
-$dashletData['TH_themesDashlet']['searchFields'] = array(
-    'date_entered' => array('default' => ''),
-    'date_modified' => array('default' => ''),
-    'assigned_user_id' => array(
-        'type' => 'assigned_user_name',
-        'default' => $current_user->name
-    )
-);
-$dashletData['TH_themesDashlet']['columns'] = array(
-    'name' => array(
-        'width' => '40',
-        'label' => 'LBL_LIST_NAME',
-        'link' => true,
-        'default' => true
-    ),
-    'date_entered' => array(
-        'width' => '15',
-        'label' => 'LBL_DATE_ENTERED',
-        'default' => true
-    ),
-    'date_modified' => array(
-        'width' => '15',
-        'label' => 'LBL_DATE_MODIFIED'
-    ),
-    'created_by' => array(
-        'width' => '8',
-        'label' => 'LBL_CREATED'
-    ),
-    'assigned_user_name' => array(
-        'width' => '8',
-        'label' => 'LBL_LIST_ASSIGNED_USER'
-    ),
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Asignado a usuario con Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Usuario',
+  'LBL_SECURITYGROUPS' => 'Grupos de Seguridad',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Grupos de Seguridad',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Fecha de creación',
+  'LBL_DATE_MODIFIED' => 'Fecha de modificación',
+  'LBL_MODIFIED' => 'Modificado por',
+  'LBL_MODIFIED_NAME' => 'Modificado por nombre',
+  'LBL_CREATED' => 'Creado por',
+  'LBL_DESCRIPTION' => 'Descripción',
+  'LBL_DELETED' => 'Eliminado',
+  'LBL_NAME' => 'Nombre',
+  'LBL_CREATED_USER' => 'Creado por usuario',
+  'LBL_MODIFIED_USER' => 'Modificado por usuario',
+  'LBL_LIST_NAME' => 'Nombre',
+  'LBL_EDIT_BUTTON' => 'Editar',
+  'LBL_REMOVE' => 'Quitar',
+  'LBL_ASCENDING' => 'Ascendente',
+  'LBL_DESCENDING' => 'Descendente',
+  'LBL_OPT_IN' => 'Autorizar',
+  'LBL_OPT_IN_PENDING_EMAIL_NOT_SENT' => 'Autorización pendiente. Confirmación no enviada',
+  'LBL_OPT_IN_PENDING_EMAIL_SENT' => 'Autorización pendiente. Confirmación ya enviada',
+  'LBL_OPT_IN_CONFIRMED' => 'Autorizado',
+  'LBL_LIST_FORM_TITLE' => 'Themes Lista',
+  'LBL_MODULE_NAME' => 'Themes',
+  'LBL_MODULE_TITLE' => 'Themes',
+  'LBL_HOMEPAGE_TITLE' => 'Mi Themes',
+  'LNK_NEW_RECORD' => 'Crear Themes',
+  'LNK_LIST' => 'Vista Themes',
+  'LNK_IMPORT_TH_THEMES' => 'Import Themes',
+  'LBL_SEARCH_FORM_TITLE' => 'Búsqueda Themes',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'Historial',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Actividades',
+  'LBL_TH_THEMES_SUBPANEL_TITLE' => 'Themes',
+  'LBL_NEW_FORM_TITLE' => 'Nuevo Themes',
 );

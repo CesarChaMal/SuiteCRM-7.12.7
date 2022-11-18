@@ -44,9 +44,9 @@
 
 global $mod_strings, $app_strings, $sugar_config;
  
-if(ACLController::checkAccess('TH_Themes', 'edit', true)){
-    $module_menu[]=array('index.php?module=TH_Themes&action=EditView&return_module=TH_Themes&return_action=DetailView', $mod_strings['LNK_NEW_RECORD'], 'Add', 'TH_Themes');
+if(ACLController::checkAccess('TH_themes', 'edit', true)){
+    $module_menu[]=array('index.php?module=TH_themes&action=EditView&return_module=TH_themes&return_action=DetailView', $mod_strings['LNK_NEW_RECORD'], 'Add', 'TH_themes');
 }
-if(ACLController::checkAccess('TH_Themes', 'list', true)){
-    $module_menu[]=array('index.php?module=TH_Themes&action=index&return_module=TH_Themes&return_action=DetailView', $mod_strings['LNK_LIST'],'View', 'TH_Themes');
+if(ACLController::checkAccess('TH_themes', 'list', true)){
+    $module_menu[]=array('index.php?module=TH_themes&action=index&return_module=TH_themes&return_action=DetailView', $mod_strings['LNK_LIST'],'View', 'TH_themes');
 }
