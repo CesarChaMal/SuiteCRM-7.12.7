@@ -20,6 +20,12 @@ $dictionary['Case']['fields']['aok_knowledgebase_id_c']['inline_edit']=1;
 
  
 
+ // created: 2022-11-21 21:11:25
+$dictionary['Case']['fields']['category_c']['inline_edit']='1';
+$dictionary['Case']['fields']['category_c']['labelValue']='Category';
+
+ 
+
  // created: 2022-11-11 17:43:19
 $dictionary['Case']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
@@ -43,6 +49,17 @@ $dictionary['Case']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
  // created: 2022-11-15 12:20:37
 $dictionary['Case']['fields']['questions_c']['inline_edit']='1';
 $dictionary['Case']['fields']['questions_c']['labelValue']='Questions';
+
+ 
+
+ // created: 2022-11-22 08:14:21
+$dictionary['Case']['fields']['resolution']['inline_edit']=true;
+
+ 
+
+ // created: 2022-11-21 21:12:47
+$dictionary['Case']['fields']['theme_c']['inline_edit']='1';
+$dictionary['Case']['fields']['theme_c']['labelValue']='Theme';
 
  
 ?>

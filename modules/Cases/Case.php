@@ -458,15 +458,15 @@ class aCase extends Basic
 //        echo '<pre>$bean->cases->getBeans(): '; print_r($cases); echo '</pre>';
 
         foreach($cases as $case) {
-            echo $case->state.'<br>';
+//            echo $case->state.'<br>';
 //            $case->state = 'Closed';
             $case->state = 'Open';
             $case->save();
-            echo $case->status.'<br>';
+//            echo $case->status.'<br>';
 //            $case->status = 'Closed';
             $case->status = 'Pending Input';
             $case->save();
-            echo '<pre>$case: '; print_r($case); echo '</pre>';
+//            echo '<pre>$case: '; print_r($case); echo '</pre>';
         }
     }
 

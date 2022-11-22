@@ -61,6 +61,7 @@ class CasesViewEdit extends ViewEdit
                     $('#internal').closest('.edit-view-row-item').hide();
                     $('#internal_label').closest('.edit-view-row-item').hide();
                     $('#addFileButton').closest('.edit-view-row-item').hide();
+                    $('#resolution').closest('.edit-view-row-item').hide();
                     $('#case_update_form_label').closest('.edit-view-row-item').hide();";
          }
 
